@@ -3917,3 +3917,15 @@ header{
     }
 
 }
+
+@media (max-width: 991px){
+
+    header{
+        display:none !important;
+    }
+
+    .hero{
+        padding-top:60px !important;
+    }
+
+}
