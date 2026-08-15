@@ -22,34 +22,65 @@
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <script>
 
-    
-    
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.querySelector(".nav-links");
+const navItems = document.querySelectorAll(".nav-links a");
+
+menuBtn.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+    menuBtn.classList.toggle("active");
+
+});
+
+navItems.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+
+        menuBtn.classList.remove("active");
+
+    });
+
+});
+
+</script>
+
+    <!-- ================= NAVBAR ================= -->
 
     <header>
 
-    <nav class="navbar">
+        <nav class="navbar">
+<!-- 
+            <div class="logo">
+                AH
+            </div> -->
 
-        <div class="logo">
-            
-        </div>
+            <ul class="nav-links">
 
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+                <li><a href="#home">Home</a></li>
 
-        <div class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
+                <li><a href="#about">About</a></li>
 
-    </nav>
+                <li><a href="#experience">Experience</a></li>
 
-</header>
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+         <div class="menu-btn" id="menuBtn">
+          <i class="fa-solid fa-bars"></i>
+             </div>
+               </nav>
+
+    </header>
+
 
     <!-- ================= HERO ================= -->
 
@@ -472,3 +503,33 @@
 
 </section>
 
+    <script>
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.querySelector(".nav-links");
+    const navItems = document.querySelectorAll(".nav-links a");
+
+    menuBtn.addEventListener("click", () => {
+
+        navLinks.classList.toggle("active");
+
+        menuBtn.classList.toggle("active");
+
+    });
+
+    navItems.forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navLinks.classList.remove("active");
+
+            menuBtn.classList.remove("active");
+
+        });
+
+    });
+
+    </script>
+
+</body>
+</html>
