@@ -3924,8 +3924,16 @@ header{
         display:none !important;
     }
 
-    .hero{
-        padding-top:60px !important;
+    .navbar{
+        display:none !important;
+    }
+
+    .menu-btn{
+        display:none !important;
+    }
+
+    .nav-links{
+        display:none !important;
     }
 
 }
