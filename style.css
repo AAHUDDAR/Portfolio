@@ -1332,3 +1332,477 @@ transform:translateY(-6px);
 
 }
 
+/* =====================================================
+   FINAL RESPONSIVE FIX
+   Android + iPhone + iPad + Tablet
+===================================================== */
+
+/* Prevent horizontal scrolling */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Better mobile tap experience */
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .hero {
+        width: 92%;
+        gap: 40px;
+    }
+
+    .hero-left h1 {
+        font-size: 55px;
+        line-height: 1.15;
+    }
+
+    .image-box {
+        width: 320px;
+        height: 320px;
+    }
+
+    .section-box {
+        width: 94%;
+        padding: 60px 40px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* ---------- GLOBAL ---------- */
+
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        width: 100%;
+        padding: 55px 0;
+    }
+
+
+    /* ---------- NAVBAR ---------- */
+
+    header {
+        width: 100%;
+    }
+
+    .navbar {
+        width: 94%;
+        margin-top: 10px;
+        padding: 13px 18px;
+        border-radius: 15px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        font-size: 23px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        width: 92%;
+        min-height: auto;
+
+        display: flex;
+        flex-direction: column-reverse;
+
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        padding-top: 145px;
+        padding-bottom: 60px;
+
+        gap: 30px;
+    }
+
+    .hero-left {
+        width: 100%;
+    }
+
+    .hero-right {
+        width: 100%;
+    }
+
+    .image-box {
+        width: min(72vw, 280px);
+        height: min(72vw, 280px);
+        margin: auto;
+    }
+
+    .hello {
+        font-size: 18px;
+    }
+
+    .hero-left h1 {
+        font-size: clamp(34px, 10vw, 48px);
+        line-height: 1.15;
+        word-break: normal;
+    }
+
+    .hero-left h2 {
+        font-size: clamp(17px, 4.5vw, 22px);
+        line-height: 1.5;
+        margin-top: 15px;
+    }
+
+    .hero-text {
+        width: 100%;
+        font-size: 15px;
+        line-height: 27px;
+        margin-top: 20px;
+    }
+
+
+    /* ---------- HERO BUTTONS ---------- */
+
+    .hero-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 28px;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 100%;
+        text-align: center;
+        padding: 14px 20px;
+    }
+
+    .social {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+
+    /* ---------- SECTION BOX ---------- */
+
+    .section-box {
+        width: 94%;
+        max-width: none;
+
+        padding: 45px 18px;
+
+        border-radius: 25px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* ---------- SECTION TITLE ---------- */
+
+    .section-title {
+        font-size: clamp(30px, 8vw, 40px);
+        margin-bottom: 50px;
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    .about {
+        padding: 60px 0;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .bio {
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .about-box {
+        padding: 22px;
+    }
+
+
+    /* ---------- JOB CARD ---------- */
+
+    .job-card {
+        margin-top: 25px;
+        padding: 25px 18px;
+
+        flex-direction: column;
+        text-align: center;
+
+        gap: 20px;
+    }
+
+    .job-card h3 {
+        font-size: 25px;
+    }
+
+    .job-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* ---------- EXPERIENCE ---------- */
+
+    .timeline-card {
+        width: 100%;
+    }
+
+    .exp-title {
+        font-size: 26px;
+    }
+
+    .exp-summary {
+        font-size: 14px;
+        line-height: 27px;
+    }
+
+    .exp-info {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .info-box {
+        padding: 18px;
+    }
+
+
+    /* ---------- PROJECTS ---------- */
+
+    .projects-grid {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+        margin-top: 35px;
+    }
+
+    .project-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+
+    .project-content {
+        padding: 20px;
+    }
+
+    .project-content h3 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .project-content p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .project-tech {
+        gap: 8px;
+    }
+
+    .project-tech span {
+        font-size: 12px;
+        padding: 7px 12px;
+    }
+
+    .project-btn {
+        width: fit-content;
+        align-self: center;
+        padding: 11px 22px;
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-container h3 {
+        font-size: 28px;
+        line-height: 1.4;
+    }
+
+    .contact-container p {
+        font-size: 14px;
+        line-height: 27px;
+    }
+
+    .contact-item {
+        font-size: 15px;
+        max-width: 100%;
+        word-break: break-word;
+    }
+
+    .contact-buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .whatsapp-btn,
+    .email-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-social {
+        gap: 12px;
+    }
+
+    .contact-social a {
+        width: 48px;
+        height: 48px;
+        font-size: 19px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL PHONES
+   320px - 480px
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        width: 92%;
+        padding: 12px 15px;
+    }
+
+    .hero {
+        width: 92%;
+        padding-top: 125px;
+    }
+
+    .image-box {
+        width: 230px;
+        height: 230px;
+    }
+
+    .hero-left h1 {
+        font-size: 35px;
+    }
+
+    .hero-left h2 {
+        font-size: 17px;
+    }
+
+    .section-box {
+        width: 94%;
+        padding: 40px 15px;
+        border-radius: 22px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .about-box {
+        padding: 20px;
+    }
+
+    .project-content {
+        padding: 18px;
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+   320px
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .image-box {
+        width: 210px;
+        height: 210px;
+    }
+
+    .hero-left h1 {
+        font-size: 31px;
+    }
+
+    .hero-left h2 {
+        font-size: 15px;
+    }
+
+    .section-box {
+        width: 96%;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+}
+
+
+/* =====================================================
+   iOS SAFARI FIX
+===================================================== */
+
+@supports (-webkit-touch-callout: none) {
+
+    body {
+        -webkit-text-size-adjust: 100%;
+    }
+
+    input,
+    textarea,
+    button {
+        -webkit-appearance: none;
+        border-radius: 12px;
+    }
+
+}
